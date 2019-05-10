@@ -1,0 +1,57 @@
+��<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Formularz Rejestracji
+		</title>
+	</head>
+	<body bgcolor="#007399">
+		<center>
+			<h1>
+				<strong>FORMULARZ REJESTRACJI DO GRY</strong>
+			</h1>
+		</center>
+		<form method="post" enctype="text/plain">
+			<span style="color:#ffff4d;">
+			Adres E-mail: <input type="e-mail" id="email" value="email@gmail.com" />
+			<br />
+			<br />
+			HasBo: <input type="password" id="haslo" />
+			<br />
+			<br />
+			Powt�rz hasBo: <input type="password" id="haslo_repeated" />
+			<br />
+			<br />
+			Nazwa u|ytkownika (max. 12 znak�w): <input type="text" id="nazwa" maxlength="12" />
+			<br />
+			<br />
+			Data urodzenia (Musisz mie minimum 13 lat):
+  			<input type="date" name="urodziny" max="2005-01-01">
+			<br />
+			<br />
+			<fieldset>
+				<legend> Twoja pBe: </legend>
+
+					<input type="radio" name="plec" value="mezczyzna"/>M|czyzna <br />
+					<input type="radio" name="plec" value="kobieta"/>Kobieta <br />
+					<input type="radio" name="plec" value="inna"/>Inna: <input type="text" id="plec_inna" />
+			</fieldset>
+			<br />
+			<br />
+			Wybierz kolor swojego awatara:
+			<input type="color" name="kolor_ikonki">
+			<br /><br />
+			Uwagi:
+			<textarea cols="50" rows="6"></textarea>
+			<br />
+			<br />
+			ZapoznaBem/am si z umow i polityk prywatno[ci <input type="checkbox" name="zgoda" value="Wyrazona" required>
+			<br />
+			<br />
+			Prze[lij dane:
+			<input type="submit" value="Prze[lij">
+
+			</span>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,18 @@
+img {
+  z-index: -1;
+  position: absolute;
+  top: 200px;
+  left: 500px;
+  width: 250px;
+}
+div#ramka {
+  position: absolute;
+  z-index: 1;
+  border: 1px dotted red;
+  top: 220px;
+  left: 40px;
+  background-color: grey;
+}
+body {
+  margin: 200px;
+}

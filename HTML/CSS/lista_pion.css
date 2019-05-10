@@ -1,0 +1,116 @@
+ul.list-vertical {
+  list-style-type: none;
+}
+
+ul.list-vertical li {
+  display: block;
+  margin: 0px;
+}
+
+ul.list-vertical2 {
+  list-style-type: none;
+}
+
+ul.list-vertical2 li {
+  display: block;
+  margin: 0px;
+}
+
+ul.list-vertical2 a:link, ul.list-vertical2 a:visited {
+  display: block;
+  width: 170px;
+  background-color: navy;
+  color: white;
+  padding: 6px 3px 3px 6px;
+  border: 2px outset blue;
+  text-decoration: none;
+  border-radius: 25px;
+  text-align: center;
+  font-family: "Comic Sans MS";
+}
+
+ul.list-vertical2 a:hover {
+  color: yellow;
+  padding: 6px 3px 3px 6px;
+  border: 2px inset yellow;
+  text-decoration: none;
+  border-radius: 25px;
+  text-align: center;
+  font-family: "Comic Sans MS";
+}
+
+ul.list-vertical a:link, ul.list-vertical2 a:visited {
+  display: block;
+  width: 170px;
+  background-color: navy;
+  color: white;
+  padding: 6px 3px 3px 6px;
+  border: 2px outset blue;
+  text-decoration: none;
+}
+
+ul.list-vertical a:hover {
+  color: yellow;
+  padding: 6px 3px 3px 6px;
+  border: 2px inset yellow;
+  text-decoration: none;
+}
+
+/* BUG: _----------------------------------------------------- */
+ul.list-vertical3 {
+  list-style-type: none;
+}
+
+ul.list-vertical3 li {
+  display: inline;
+  margin: 0px;
+}
+
+ul.list-vertical4 {
+  list-style-type: none;
+}
+
+ul.list-vertical4 li {
+  display: inline;
+  margin: 0px;
+}
+
+ul.list-vertical3 a {
+  display: inline;
+  width: 170px;
+  background-color: navy;
+  color: white;
+  padding: 6px 3px 3px 6px;
+  border: 2px outset blue;
+  text-decoration: none;
+  border-radius: 25px;
+  text-align: center;
+  font-family: "Comic Sans MS";
+}
+
+ul.list-vertical3 a:hover {
+  color: yellow;
+  padding: 6px 3px 3px 6px;
+  border: 2px inset yellow;
+  text-decoration: none;
+  border-radius: 25px;
+  text-align: center;
+  font-family: "Comic Sans MS";
+}
+
+ul.list-vertical4 a {
+  display: inline;
+  width: 170px;
+  background-color: navy;
+  color: white;
+  padding: 6px 3px 3px 6px;
+  border: 2px outset blue;
+  text-decoration: none;
+}
+
+ul.list-vertical4 a:hover {
+  color: yellow;
+  padding: 6px 3px 3px 6px;
+  border: 2px inset yellow;
+  text-decoration: none;
+}

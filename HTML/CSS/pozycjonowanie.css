@@ -1,0 +1,28 @@
+div {
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
+}
+div.kwadrat1 {
+  background-color: red;
+  position: absolute;
+  left: 30em;
+  top:30px;
+}
+div.kwadrat2 {
+  background-color: green;
+  position: absolute;
+  top:33px;
+  left: 30.5em;
+}
+div.kwadrat3 {
+  background-color: gray;
+  width:300px;
+  height:300px;
+
+}
+img {
+  position: relative;
+  left: 30px;
+  top: 30px;
+}

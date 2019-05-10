@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Lobster+Two');
+body/*>header*/ {
+  background-image: url(../foty/kawa.jpg);
+  text-align: center;
+  padding: 130px;
+
+}
+#title {
+  font-size: 6em;
+  font-weight: bold;
+  font-family: "Lobster";
+  color: orange;
+}
+
+main>section {
+  float: left;
+  width: 33.33%;
+  border-radius:  0 15px 0 0;
+}
+
+section>header {
+  font-family: "Lobster Two";
+}
+/********************SECTIONS***********************/
+/***************LEFT*************/
+section#left {
+  background-color: #EFEFEF;
+}
+img[alt="Quiche"] {
+  width: 100%;
+  border-radius: inherit;
+}
+
+/************CENTER***************/
+section#center {
+  background-color: #454545;
+}
+/************RIGHT***************/
+section#right {
+  background-color: #222222;
+}
+/****************END OF SECTIONS*********************/
+footer {
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  section {
+    width: 100%;
+  }
+}

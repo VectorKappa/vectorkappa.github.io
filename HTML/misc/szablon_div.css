@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+#pudelko {
+  margin: auto;
+  width: 1000px;
+}
+#logo {
+  height: 70px;
+  background-color: gray;
+  color: red;
+}
+#menu {
+  background-color: white;
+  padding-top: 10px;
+  height: 30px;
+}
+#tresc {
+  height: 470px;
+  background-color: silver;
+  overflow: scroll;
+}
+#stopka {
+  background-color: gray;
+  height: 30px;
+}
+a:link , a:visited
+a:active , a:hover
+.button
+*::selection {color:transparent}

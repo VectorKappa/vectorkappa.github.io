@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<!--meta http-equiv="refresh" content="5"-->
+		<title>
+			Formularz
+		</title>
+	</head>
+	<body>
+		<font size="12">
+			<center>
+				FORMULARZ PRZYKŁADOWY
+			</center>
+		</font>
+		<form action="onclick" method="post" enctype="text/plain">
+			<br />
+			<br />
+				IMIĘ: <input type="text" id="imie_i_nazwisko" />
+			<br />
+			<br />
+				ADRES E-MAIL: <input type="text" id="email" />
+			<br />
+			<br />
+				HASŁO: <input type="password" id="haslo" />
+			<br />
+			<br />
+		<fieldset>
+			<legend>
+				PŁEĆ: 
+			</legend> 
+				<input type="radio" name="plec" value="mezczyzna"/> MĘŻCZYZNA 
+				<br />
+				<input type="radio" name="plec" value="kobieta"/> KOBIETA 
+		</fieldset>
+		<br />
+		<br />
+		<fieldset >
+			<legend >
+				JĘZYKI, KTÓRYMI WŁADASZ:
+			</legend>
+			<input type="checkbox" id="jezyki" value="angielski" checked="checked"  /> ANG
+			<br />
+			<br />
+			<input type="checkbox" id="jezyki" value="niemiecki" /> NIE 
+			<br />
+			<br />
+			<input type="checkbox" id="jezyki" value="chinski" /> CHN 
+		</fieldset>
+		<br />
+		<br />
+		<select name="nazwa_owoce" multiple="multiple">
+			<optgroup label="ULUBIONE OWOCE">
+				<option value="truskawki">
+					TRUSKAWKI
+				</option>
+				<option value="banany">
+					BANANY
+				</option>
+				<option value="maliny">
+					MALINY
+				</option>
+			</optgroup> 
+		</select>
+		<select id="days[ ]" name="days[ ]" size="7" multiple="multiple">
+			<optgroup label="DNI WOLNE">
+				<option>
+					SOBOTA
+				</option>
+				<option>
+					NIEDZIELA
+				</option>
+			</optgroup>
+			<optgroup label="DNI ROBOCZE">
+				<option>
+					PONIEDZIAŁEK
+				</option>
+				<option>
+					WTOREK
+				</option>
+				<option>
+					ŚRODA
+				</option>
+				<option>
+					CZWARTEK
+				</option>
+				<option>
+					PIĄTEK
+				</option> 
+			</optgroup>
+		</select>
+		<input list="blok" name="przegladarki" />      
+			<datalist id="blok">       
+				<option value="Internet Explorer">     
+				<option value="Firefox">    
+				<option value="Chrome"> 
+				<option value="Opera">    
+				<option value="Safari">  
+			</datalist>
+		<br />
+		<br />
+		<textarea cols="50" rows="6">
+Jan Niezbędny
+ul. Nieznana 3
+40-001 Katowice
+Polska
+		</textarea>
+		<textarea cols="50" rows="6">
+Wprowadź swój adres
+		</textarea>
+		<br />
+		<br />
+		<button type="reset" name="resetuj">
+			Zresetuj
+		</button>
+		<br />
+		<br />
+		<button type="button" name="opusc">
+			Opuść stronę
+		</button>
+		<br />
+		<br />
+		<button type="button" id="kupteraz" name="przycisk_kupowania" onclick="alert('Zakupiono')"> 
+			Kupuj teraz!
+		</button>
+		<br />
+		<br />
+		<input type="file" name="plik" value="Przeglądaj!"> 
+		<br />
+		<br />
+		<label for="imie">
+			<u>I</u>mię:
+		</label>
+		<input type="text" id="imie" name="imie" tabindex="3" accesskey="I"> 
+		<br />
+		PRZYCISK JAKO OBRAZ:
+		<br />
+		<input type="image" name="nazwa" width="30%" src="foty/Gekon.jpg"> 
+		<br />
+		<br />
+		
+<fieldset><legend>Usprawnienia w formularzach (HTML 5)</legend>
+<p>AutoFocus:  <input type="text" id="Imie" autofocus/></p> 
+<p>AutoComplete:  <input type="text" id="Imie" autocomplete/></p>
+<p>Lista rozwijana:<input list="blok" name="jezyki" />
+<datalist id="blok">
+	<option value="Angielski">
+	<option value="Francuski">
+</datalist></p>
+<p>Wypelnij:  <input type="text" id="Imie" required/></p>
+<p>E-mail:  <input type="email" id="E-mail" required/></p>
+<p>URL:  <input type="url" id="URL" required/></p>
+<p>Liczba:  <input type="number" min="1" max="9" id="liczba" required/></p>
+<p>Data:  <input type="date" id="Data" required/></p>
+<p>Color:  <input type="color" id="Data" required/></p>
+<p>Lista rozwijana:<input list="blok1" name="jezyki" />
+<datalist id="blok1">
+	<option value="Internet Explorer">
+	<option value="Firefox">
+	<option value="Chrome">
+	<option value="Opera">
+	<option value="Safari">
+</datalist></p>
+</form>
+<form action="/action_page.php"
+  oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  0
+  <input type="range"  id="a" name="a" value="50">
+  100 +
+  <input type="number" id="b" name="b" value="50">
+  =
+  <output name="x" for="a b"></output>
+  <br><br>
+  <input type="submit">
+		 <form action="onclick"
+  oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  0
+  <input type="range"  id="a" name="a" value="50">
+  100 +
+  <input type="number" id="b" name="b" value="50">
+  =
+  <output name="x" for="a b"></output>
+  <br><br>
+  <input type="submit">
+</form> 
+		<input list="przegladarki2">
+  <datalist id="przegladarki2">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist> 
+	</body>
+</html>

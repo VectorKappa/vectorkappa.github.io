@@ -1,0 +1,12 @@
+<body>
+  <div id="pudelko">
+    <div id="logo">
+    </div>
+    <div id="menu">
+    </div>
+    <div id="tresc">
+    </div>
+    <div id="stopka">
+    </div>
+  </div>
+</body>

@@ -1,0 +1,31 @@
+#zdawanie::before {
+  content: "????";
+  color: fuchsia;
+  border: 1px dotted cyan;
+  background-image: linear-gradient(cyan, maroon);
+  letter-spacing: 13px;
+}
+#zdawanie::after {
+  font-family: "Comic Sans MS";
+  color: teal;
+  content: "DAMY RADÊ TO ZROBIÆ!";
+  border: 0.5em outset yellow;
+}
+div#jeden::first-line {
+  color:pink;
+  text-transform: capitalize;
+  background-color: yellow;
+  font-size: 2em;
+}
+div#dwa::first-letter {
+  color: #00FF00;
+  font-size: 5em;
+  border: 3px dashed #FF00FF;
+  background-image: linear-gradient(to left, yellow, orange);
+  padding: 1em;
+  float: left;
+}
+h1, h2, h3 {
+  border: 1px solid black;
+  font-family: fantasy;
+}
