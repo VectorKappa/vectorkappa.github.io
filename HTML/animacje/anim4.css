@@ -1,0 +1,126 @@
+.anim_top {
+	width: 50px;
+	height: 50px;
+	background-color: red;
+	position: absolute;
+	left: 5px;
+	top: 5px;
+	animation-name: top;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	transform-origin: left;
+}
+
+.anim_left {
+	width: 50px;
+	height: 50px;
+	background-color: blue;
+	position: absolute;
+	left: 5px;
+	top: 205px;
+	transform-origin: bottom;
+	animation-name: left;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+.anim_center {
+	width: 50px;
+	height: 50px;
+	background-color: gray;
+	position: absolute;
+	left: 105px;
+	top: 105px;
+	z-index: 2;
+	animation-name: center;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+.anim_right {
+	width: 50px;
+	height: 50px;
+	background-color: blue;
+	position: absolute;
+	left: 205px;
+	top: 5px;
+	transform-origin: top;
+	animation-name: right;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+.anim_bottom {
+	width: 50px;
+	height: 50px;
+	background-color: red;
+	position: absolute;
+	left: 205px;
+	top: 205px;
+	animation-name: bottom;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	transform-origin: right;
+}
+
+@keyframes center{
+	from, to{
+		transform: scale(0) rotate(0turn);
+		border-radius: 50%;
+	}
+	50%{
+		transform: scale(3) rotate(1turn);
+		border-radius: 0;
+	}
+}
+
+@keyframes top{
+	from, to {
+			  transform: scaleX(1);
+			  z-index: 0;
+			  opacity: 100%;
+	}
+	50% {
+			  transform: scaleX(5);
+			  z-index:1;
+			  opacity: 10%;
+	}
+}
+
+@keyframes left{
+	from, to {
+			  transform: scaleY(1);
+			  opacity: 100%;
+	}
+	50% {
+			  transform: scaleY(5);
+			  opacity: 10%;
+	}
+}
+
+@keyframes bottom {
+	from, to {
+			  transform: scaleX(1);
+			  opacity: 100%;
+	}
+	50% {
+			  transform: scaleX(5);
+			  opacity: 10%;
+	}
+}
+
+@keyframes right{
+	from, to {
+			  transform: scaleY(1);
+			  opacity: 100%;
+	}
+	50% {
+			  transform: scaleY(5);
+			  opacity: 10%;
+	}
+}
+
+
+
+
+

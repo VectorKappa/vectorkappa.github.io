@@ -1,0 +1,148 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-image: radial-gradient(circle, black, white, black, white, black, white, black, white, black, white);
+  animation: tlo 0.02s linear infinite;
+}
+
+#anim {
+  border: 2px solid black;
+  width: 10rem;
+  height: 10rem;
+  background-image: radial-gradient(circle, black, white, black, white);
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  animation: z 2s ease-in-out infinite, obrot 2s linear infinite, kolo 1s ease-in-out infinite, colour 0.01s linear infinite;
+}
+
+#anim1 {
+  border: 2px solid black;
+  width: 10rem;
+  height: 10rem;
+  background-image: radial-gradient(circle, black, white, black, white);
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  animation: z 2.01s ease-in-out 0.1s infinite, obrot 2.01s linear 1s infinite, kolo 1s ease-in-out 1s infinite, colour 0.02s linear infinite;
+}
+
+#anim2 {
+  border: 2px solid black;
+  width: 10rem;
+  height: 10rem;
+  background-image: radial-gradient(circle, black, white, black, white);
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  animation: z 2.02s ease-in-out infinite reverse, obrot 2.02s linear infinite, kolo 1s ease-in-out infinite, colour 0.03s linear infinite;
+}
+
+#anim3 {
+  border: 2px solid black;
+  width: 10rem;
+  height: 10rem;
+  background-image: radial-gradient(circle, black, white, black, white);
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  animation: z 2.03s ease-in-out 0.3s infinite reverse, obrot 2.03s linear 1s infinite, kolo 1s ease-in-out 1s infinite, colour 0.04s linear infinite;
+}
+
+#anim4 {
+  border: 2px solid black;
+  width: 10rem;
+  height: 10rem;
+  background-image: radial-gradient(circle, black, white, black, white);
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  animation: ruch 2.04s ease-in-out infinite, obrot 2.04s linear 1s infinite, kolo 1s ease-in-out 1s infinite, colour 0.05s linear infinite;
+}
+
+@keyframes z {
+  from, to {
+    top: 0.5rem;
+    left: 0.5rem;
+  }
+
+  25% {
+    top: 0.5rem;
+    left: calc(100% - 10.5rem);
+  }
+
+  50% {
+    top: calc(100% - 10.5rem);
+    left: 0.5rem;
+  }
+
+  75% {
+    top: calc(100% - 10.5rem);
+    left: calc(100% - 10.5rem);
+  }
+}
+
+@keyframes ruch {
+  from, to {
+    top: 0.5rem;
+    left: 0.5rem;
+  }
+
+  25% {
+    top: 0.5rem;
+    left: calc(100% - 10.5rem);
+  }
+
+  50% {
+    top: calc(100% - 10.5rem);
+    left: calc(100% - 10.5rem);
+  }
+
+  75% {
+    top: calc(100% - 10.5rem);
+    left: 0.5rem;
+  }
+}
+
+@keyframes obrot {
+  from {
+    transform: rotate(0turn);
+  }
+
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes kolo {
+  from, to {
+    border-radius: 0%;
+  }
+
+  50% {
+    border-radius: 50%;
+  }
+}
+
+@keyframes colour {
+  0% {
+    background-image: radial-gradient(circle, black, white, black, white);
+  }
+
+  100% {
+    background-image: radial-gradient(circle, white, black, white, black);
+  }
+}
+
+@keyframes tlo {
+  0% {
+    background-image: radial-gradient(circle, black, white, black, white, black, white, black, white, black, white);
+  }
+
+  100% {
+    background-image: radial-gradient(circle, white, black, white, black, white, black, white, black, white, black);
+  }
+}
